@@ -1,1 +1,5 @@
 .gradle
+*.iml
+*.ipr
+*.iws
+generated-src
