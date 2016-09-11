@@ -1,3 +1,11 @@
 NEWLINE=1
 WS=2
-ID=3
+INTERFACE=3
+CLASS=4
+ID=5
+LBRACKET=6
+RBRACKET=7
+'interface'=3
+'class'=4
+'{'=6
+'}'=7
