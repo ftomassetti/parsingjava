@@ -15,4 +15,35 @@ class ParsingTest {
         """
         check(code)
     }
+
+    @Test
+    fun parseClassWithFields() {
+        val code = """
+        class A { int i; boolean b; String s;}
+        """
+        check(code)
+    }
+
+    @Test
+    fun parseClassWithMethods() {
+        val code = """
+        class A {
+            void foo(){
+            }
+
+            int bar(int a) {
+                return a;
+            }
+        }
+        """
+        check(code)
+    }
+
+    @Test
+    fun parseSuperSimpleInterface() {
+        val code = """
+        interface A {}
+        """
+        check(code)
+    }
 }
